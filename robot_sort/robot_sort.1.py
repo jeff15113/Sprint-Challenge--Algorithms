@@ -122,10 +122,6 @@ class SortingRobot:
                 break
 
             self.set_light_off()
-            # self.swap_item()
-
-            # if (self._item is not None):
-            #     self.swap_item()
 
             while self.can_move_left():
                 if(self._item != None and self._list[self._position] != None):
@@ -140,17 +136,8 @@ class SortingRobot:
                         self.swap_item()
                         self.set_light_on()
                 self.move_right()
-                # if (self.compare_item() == 0 or self.compare_item() == None):
-                #     print(self._item)
-                #     break
 
-            # if (self._item is not None):
             self.swap_item()
-
-            # print(self.move_left())
-
-            # if(self.light_is_on() == False):
-            #     break
 
 
 if __name__ == "__main__":
